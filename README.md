@@ -4,7 +4,7 @@
 
 Vuejs directive to detect when an element enters into the viewport
 
-view <a href="https://verylazyloading.herokuapp.com/">demo</a>
+view <a href="https://verylazyloading.herokuapp.com/" target="_blank">demo</a>
 
 ## Installation
 
