@@ -1,4 +1,3 @@
-import uuidv4 from "./utils/uuid4";
 import { DirectiveOptions } from "vue/types/umd";
 
 const counter = new WeakMap();

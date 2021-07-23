@@ -1,17 +1,8 @@
-var uuidv4 = (function () {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = (Math.random() * 16) | 0;
-        var v = c === 'x' ? r : (r & 0x3) | 0x8;
-        return v.toString(16);
-    });
-});
-
 var counter = new WeakMap();
 var reverseCounter = new WeakMap();
 var wasIntersecting = new WeakMap();
 var params = {
     handlers: new WeakMap(),
-    debouncers: new WeakMap(),
     instant: new WeakMap(),
     uniques: new WeakMap(),
     callbacks: new WeakMap(),
@@ -81,7 +72,6 @@ var setInitialParams = function (el, binding) {
     params.instant.set(el, binding.modifiers.instant);
     params.uniques.set(el, binding.modifiers.unique);
     params.current.set(el, binding.modifiers.current);
-    params.debouncers.set(el, uuidv4());
     params.handlers.set(el, binding.value);
 };
 var removeParams = function (el) {
@@ -89,7 +79,6 @@ var removeParams = function (el) {
     params.instant.delete(el);
     params.uniques.delete(el);
     params.current.delete(el);
-    params.debouncers.delete(el);
     params.handlers.delete(el);
     counter.delete(el);
     reverseCounter.delete(el);
@@ -107,7 +96,7 @@ var isIntersecting = {
 };
 var index = {
     install: function (Vue) {
-        Vue.directive('is-intersecting', isIntersecting);
+        Vue.directive("is-intersecting", isIntersecting);
     },
 };
 
