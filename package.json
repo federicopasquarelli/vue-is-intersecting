@@ -2,7 +2,7 @@
   "name": "vue-is-intersecting",
   "version": "0.0.8",
   "description": "a vuejs directive for launching callbacks when an element is intersecting the viewport",
-  "main": "dist/index.life.js",
+  "main": "dist/index.iife.js",
   "module": "dist/index.esm.js",
   "unpkg": "dist/index.min.js",
   "types": "dist/types/index.d.ts",

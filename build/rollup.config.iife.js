@@ -6,7 +6,7 @@ const config = Object.assign({}, base, {
         format: 'iife',
         exports: 'named',
         name: 'vueIsIntersecting',
-        file: './dist/index.life.js',
+        file: './dist/index.iife.js',
         globals: {
             vue: 'Vue'
         },
