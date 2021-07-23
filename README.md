@@ -1,4 +1,4 @@
-# Vue Intersect Directive
+# Vue Is Intersecting
 
 <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/vue-2.6-brightgreen"/></a>
 
@@ -52,7 +52,7 @@ instant modifier fires the callback immediately, no debounce
 <div v-is-intersecting.instant="myMethod">Hello</div>
 ```
 
-curret modifier fires triggers 2 different callbacks when the element enters or exit the viewport
+curret modifier triggers 2 different callbacks when the element enters or exit the viewport
 
 ```html
 <div v-is-intersecting.current="[enterMethod, exitMethod]">Hello</div>
