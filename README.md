@@ -6,7 +6,7 @@ Vuejs directive to detect when an element enters into the viewport
 
 view <a href="https://verylazyloading.herokuapp.com/">demo</a>
 
-# Installation
+## Installation
 
 Via npm:
 
@@ -29,7 +29,7 @@ import IsIntersecting from "vue-is-intersecting";
 Vue.use(IsIntersecting);
 ```
 
-# Usage
+## Usage
 
 pass data through the modifiers
 NB: by default the callback is debounced after 500ms that the binding item enters the viewport, to fire the callback immediately use the instant modifier.
