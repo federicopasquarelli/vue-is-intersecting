@@ -1,5 +1,5 @@
 import uuidv4 from "./utils/uuid4";
-import { DirectiveOptions, PluginObject } from "vue/types/umd";
+import { DirectiveOptions } from "vue/types/umd";
 
 const counter = new WeakMap();
 const reverseCounter = new WeakMap();
