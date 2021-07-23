@@ -31,10 +31,8 @@ Vue.use(IsIntersecting);
 
 # Usage
 
-## CSS Binding
-
 pass data through the modifiers
-NB: by default the callback is debounced after 500ms that the binding item enters the viewport, to fire the callback immediately use the instant modifier
+NB: by default the callback is debounced after 500ms that the binding item enters the viewport, to fire the callback immediately use the instant modifier.
 
 ```html
 <div v-is-intersecting[myData]="myMethod">Hello</div>
