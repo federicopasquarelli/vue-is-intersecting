@@ -1,6 +1,6 @@
 {
   "name": "vue-is-intersecting",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "a vuejs directive for launching callbacks when an element is intersecting the viewport",
   "main": "dist/index.iife.js",
   "module": "dist/index.esm.js",
