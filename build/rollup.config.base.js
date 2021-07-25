@@ -15,6 +15,8 @@ export default {
     output: {
         format: 'iife',
         file: './dist/index.js',
+        exports: 'named',
+        name: 'vueIsIntersecting',
         globals: {
             vue: 'Vue'
         },
