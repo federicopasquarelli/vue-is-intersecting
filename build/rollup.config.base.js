@@ -1,6 +1,6 @@
-import typescript from 'rollup-plugin-typescript'
-import minify from 'rollup-plugin-babel-minify';
-import commonjs from "rollup-plugin-commonjs";
+import typescript from 'rollup-plugin-typescript';
+import commonjs from 'rollup-plugin-commonjs';
+import { terser } from "rollup-plugin-terser";
 
 export default {
     input: './src/index.ts',
@@ -8,15 +8,11 @@ export default {
     plugins: [
         typescript(),
         commonjs(),
-        minify({
-            comments: false,
-        }),
+        terser(),
     ],
     output: {
-        format: 'iife',
+        format: 'es',
         file: './dist/index.js',
-        exports: 'named',
-        name: 'vueIsIntersecting',
         globals: {
             vue: 'Vue'
         },
