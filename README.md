@@ -4,6 +4,10 @@
 
 Vuejs directive to detect when an element appears into the viewport using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">intersection observer api</a>
 
+## Demo
+
+<a href="http://verylazyloading.herokuapp.com/">very lazy loading</a>
+
 ## Installation
 
 Via npm:
